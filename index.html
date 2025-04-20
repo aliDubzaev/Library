@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя библиотека</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Моя библиотека</h1>
+      <button id="new-book-btn" class="btn">+ Новая книга</button>
+    </header>
+    <div id="book-display"></div>
+  </div>
+  <dialog id="book-form">
+    <form>
+      <h2>Добавить книгу</h2>
+      <div class="form-group">
+        <label for="title">Название:</label>
+        <input type="text" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Автор:</label>
+        <input type="text" id="author" required>
+      </div>
+      <div class="form-group">
+        <label for="pages">Страниц:</label>
+        <input type="number" id="pages" required>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="read"> Прочитано
+        </label>
+      </div>
+      <div class="form-actions">
+        <button type="button" id="cancel-btn" class="btn btn-cancel">Отмена</button>
+        <button type="submit" class="btn">Добавить</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
